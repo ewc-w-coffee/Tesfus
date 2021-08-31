@@ -22,6 +22,9 @@ export default createGlobalStyle`
 		color: #fff;
 		font-family: 'Roboto', sans-serif;
 	}
+	a {
+		text-decoration:none;
+	}
 	a, input, button {
 		background: none;
 		color: inherit;

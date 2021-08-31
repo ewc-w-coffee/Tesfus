@@ -85,20 +85,26 @@ const NavBar = () => {
             </ProfileModal>
           )}
           <Link href="/">
-            <NavLogo src="/img/logo.svg" />
+            <a>
+              <NavLogo src="/img/logo.svg" />
+            </a>
           </Link>
           <Link href="/shop">
-            <NavItem className={router.pathname == "/shop" ? "active" : ""}>
-              Shop
-            </NavItem>
+            <a>
+              <NavItem className={router.pathname == "/shop" ? "active" : ""}>
+                Shop
+              </NavItem>
+            </a>
           </Link>
           <RightContainer>
             {!user && (
               <Link href={genDiscordUrl()}>
-                <LoginBtn>
-                  <DiscordIcon />
-                  <span>Login</span>
-                </LoginBtn>
+                <a>
+                  <LoginBtn>
+                    <DiscordIcon />
+                    <span>Login</span>
+                  </LoginBtn>
+                </a>
               </Link>
             )}
             {user && (

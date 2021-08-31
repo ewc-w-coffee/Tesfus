@@ -118,7 +118,9 @@ const Home = () => {
             {checkNotBuyer() && (
               <>
                 <Link href="/shop">
-                  <Button>Buy now</Button>
+                  <a>
+                    <Button>Buy now</Button>
+                  </a>
                 </Link>
                 <Button variant="secondary">Learn more</Button>
               </>
@@ -126,7 +128,9 @@ const Home = () => {
             {checkBuyer() && (
               <>
                 <Link href="/">
-                  <Button>Dashboard</Button>
+                  <a>
+                    <Button>Dashboard</Button>
+                  </a>
                 </Link>
                 <Button onClick={joinBuyersServer} variant="secondary">
                   Buyers Server

@@ -175,7 +175,9 @@ const Shop = () => {
             <NoStockSub>
               Check again later when we are in stock. Join the{" "}
               <Link href="/invite">
-                <span>Community Discord</span>
+                <a>
+                  <span>Community Discord</span>
+                </a>
               </Link>{" "}
               for updates regarding stock.
             </NoStockSub>

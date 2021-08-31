@@ -48,7 +48,7 @@ const Shop = () => {
       checkIfBuyer();
       checkInCommunity();
     }
-  }, [user]);
+  }, [user, checkIfBuyer, checkInCommunity]);
 
   async function getStock() {
     await db

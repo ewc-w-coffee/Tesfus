@@ -39,7 +39,7 @@ const NavBar = () => {
     if (user) {
       checkIfBuyer();
     }
-  }, [user]);
+  }, [user, checkIfBuyer]);
 
   const genDiscordUrl = () => {
     const query = {
